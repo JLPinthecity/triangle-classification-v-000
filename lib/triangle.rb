@@ -1,6 +1,6 @@
 class Triangle
   attr_reader :a, :b, :c
-  
+
   def initialize(a, b, c)
     @a = a
     @b = b
@@ -24,7 +24,7 @@ class Triangle
       [b + c > a],
       [a + c > b]
     ]
-    raise TriangleError 
+    raise TriangleError
     end
   end
 
