@@ -21,11 +21,11 @@ class Triangle
   def validate_triangle
     signs = [@a, @b, @c]
     if signs.each do |side|
-      side = 0 
-    signs << false 
-    elsif 
+      side = 0
+    signs << false
+    elsif
       signs.max < signs.delete(signs.max)
-    signs << false 
+    signs << false
     end
     raise TriangleError if signs.include?(false)
   end
