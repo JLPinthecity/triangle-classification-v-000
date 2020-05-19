@@ -12,9 +12,21 @@ class Triangle
     if sides.each do |side|
       side != 0 && @a + @b > @c || @b + @c > @a || @a + @c > @b
     end
-
-
   end
+
+  def kind
+    validate_triangle
+    if @a == @b == @c
+      :equilateral
+    elsif @a == @b || @b == @c || @a == @c 
+      :isosceles
+    else 
+      :scalene
+    end
+  end
+    
+      
+    end
 
 
 
