@@ -11,7 +11,7 @@ class Triangle
     sides = [@a, @b, @c]
     if sides.each do |side|
       side != 0 && @a + @b > @c || @b + @c > @a || @a + @c > @b
-    else 
+    else
     raise TriangleError
     end
   end
@@ -20,14 +20,14 @@ class Triangle
     validate_triangle
     if @a == @b == @c
       :equilateral
-    elsif @a == @b || @b == @c || @a == @c 
+    elsif @a == @b || @b == @c || @a == @c
       :isosceles
-    else 
+    else
       :scalene
     end
   end
-    
-      
+
+
     end
 
 
