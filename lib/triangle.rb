@@ -10,9 +10,9 @@ class Triangle
   def validate_triangle
     sides = [@a, @b, @c]
     if sides.each do |side|
-      side == 0 
+      side == 0
     raise TriangleError
-  else 
+  else
     sides.max.pop > sides.sum
   end
 
