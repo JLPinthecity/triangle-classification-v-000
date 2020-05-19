@@ -29,6 +29,7 @@ class Triangle
     end
     raise TriangleError if signs.include?(false)
   end
+  end
 
   class TriangleError < StandardError
   end
