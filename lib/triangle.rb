@@ -14,6 +14,7 @@ class Triangle
     raise TriangleError
     else
     sides.max.pop > sides.sum
+    binding.pry
     end
   end
 
