@@ -1,6 +1,6 @@
 class Triangle
   attr_reader :a, :b, :c
-
+  
   def initialize(a, b, c)
     @a = a
     @b = b
@@ -19,13 +19,9 @@ class Triangle
   end
 
   def validate_triangle
-    REAL_TRIANGLE = [
-      [a + b > c],
-      [b + c > a],
-      [a + c > b]
-    ]
-    raise TriangleError
-    end
+    sides = [@a, @b, @c]
+    
+  binding.pry
   end
 
   class TriangleError < StandardError
