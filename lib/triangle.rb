@@ -8,12 +8,7 @@ class Triangle
   end
 
   def validate_triangle
-    sides = [@a, @b, @c]
-    if sides.each do |side|
-      side = 0 && @a + @b > @c || @b + @c > @a || @a + @c > @b
-    raise TriangleError
-    end
-  end
+    
 
   def kind
     validate_triangle
