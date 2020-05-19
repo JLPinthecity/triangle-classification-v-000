@@ -8,8 +8,12 @@ class Triangle
   end
 
   def validate_triangle
-    real_triangle = [(@a + @b > @c), (@b + @c > @a), (@a + @c > @b)]
+    sides = [@a, @b, @c]
+    if sides.each do |side|
+      side != 0 && @a + @b > @c || @b + @c > @a || @a + @c > @b
+    end
     
+      
   end
 
 
