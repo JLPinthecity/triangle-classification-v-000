@@ -12,8 +12,8 @@ class Triangle
     if sides.each do |side|
       side != 0 && @a + @b > @c || @b + @c > @a || @a + @c > @b
     end
-    
-      
+
+
   end
 
 
