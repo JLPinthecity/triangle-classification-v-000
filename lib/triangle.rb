@@ -12,8 +12,9 @@ class Triangle
     if sides.each do |side|
       side == 0
     raise TriangleError
-  else
+    else
     sides.max.pop > sides.sum
+    end
   end
 
   def kind
