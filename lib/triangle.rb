@@ -11,7 +11,6 @@ class Triangle
     sides = [@a, @b, @c]
     if sides.each do |side|
       side != 0 && @a + @b > @c || @b + @c > @a || @a + @c > @b
-    else
     raise TriangleError
     end
   end
