@@ -21,7 +21,7 @@ class Triangle
   def validate_triangle
     sides = [@a, @b, @c]
     binding.pry
-    raise TriangleError
+    
   end
 
   class TriangleError < StandardError
