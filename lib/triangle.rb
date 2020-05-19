@@ -22,7 +22,6 @@ class Triangle
     sides = [@a, @b, @c]
     binding.pry
     raise TriangleError
-    end
   end
 
   class TriangleError < StandardError
