@@ -7,11 +7,9 @@ class Triangle
     @c = c
   end
 
-    sides = [@a, @b, @c]
-
   def validate_triangle
-    if a + b !> == c || @side2 + @side3 !> == @side1 ||
-       @side1 + @side3 !> == @side2
+    real_triangle = [(@a + @b > @c), (@b + @c > @a), (@a + @c > @b)]
+    
   end
 
 
