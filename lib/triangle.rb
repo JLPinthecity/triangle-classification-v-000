@@ -19,15 +19,11 @@ class Triangle
   end
 
   def validate_triangle
-    signs = [@a, @b, @c]
-    if signs.each do |side|
-      side = 0
-    signs << false
-    elsif
-      signs.max < signs.delete(signs.max)
-    signs << false
+    real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
+    [a, b, c].each do |side|
+      real_triangle << false if side <= 0 
+    raise TriangleError if real_triangle.include?(false)
     end
-    raise TriangleError if signs.include?(false)
   end
 
 
